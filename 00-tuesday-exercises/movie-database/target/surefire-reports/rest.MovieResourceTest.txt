@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: rest.MovieResourceTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.333 s - in rest.MovieResourceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.021 s - in rest.MovieResourceTest
