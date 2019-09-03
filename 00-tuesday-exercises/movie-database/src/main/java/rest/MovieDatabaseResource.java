@@ -17,6 +17,7 @@ import javax.ws.rs.core.MediaType;
 
 //Todo Remove or change relevant parts before ACTUAL use
 @Path("api")
+
 public class MovieDatabaseResource {
 
     private static final EntityManagerFactory EMF = EMF_Creator.createEntityManagerFactory(
