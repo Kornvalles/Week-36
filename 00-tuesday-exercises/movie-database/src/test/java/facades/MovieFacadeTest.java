@@ -2,8 +2,14 @@ package facades;
 
 import utils.EMF_Creator;
 import entities.Movie;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasProperty;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -20,9 +26,8 @@ public class MovieFacadeTest {
 
     private static EntityManagerFactory emf;
     private static MovieFacade facade;
-    
-    private Movie m1 = new Movie(2014, "Ride Along", new String[]{"Kevin Hart","Ice Cube"});
-    private Movie m2 = new Movie(2017, "Jumanji: Welcome to the jungle", new String[]{"Kevin Hart","Dwayne Johnson","Jack Black"});
+
+    private Movie m1 = new Movie(1995, "Friday", new String[]{"Chris Rock", "Ice Cube"});
 
     public MovieFacadeTest() {
     }
@@ -46,8 +51,8 @@ public class MovieFacadeTest {
      */
     @BeforeAll
     public static void setUpClassV2() {
-       emf = EMF_Creator.createEntityManagerFactory(DbSelector.TEST,Strategy.DROP_AND_CREATE);
-       facade = MovieFacade.getFacadeExample(emf);
+        emf = EMF_Creator.createEntityManagerFactory(DbSelector.TEST, Strategy.DROP_AND_CREATE);
+        facade = MovieFacade.getFacadeExample(emf);
     }
 
     @AfterAll
@@ -64,8 +69,6 @@ public class MovieFacadeTest {
             em.getTransaction().begin();
             em.createNamedQuery("Movie.deleteAllRows").executeUpdate();
             em.persist(m1);
-            em.persist(m2);
-
             em.getTransaction().commit();
         } finally {
             em.close();
@@ -77,10 +80,30 @@ public class MovieFacadeTest {
 //        Remove any data after each test was run
     }
 
-    // TODO: Delete or change this method 
     @Test
     public void testAFacadeMethod() {
-        assertEquals(2, facade.getNumberOfMoviesInDB(), "Expects two rows in the database");
+        assertEquals(1, facade.getNumberOfMoviesInDB(), "Expects one rows in the database");
     }
 
+    @Test
+    public void testGetAllMovies() {
+        //Arrange
+        List<Movie> expResult = new ArrayList<>();
+        expResult.add(m1);
+        //Act
+        List<Movie> result = facade.getAllMovies();
+        //Assert
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testGetMovieById() {
+        Movie movie = facade.getMovieById(m1.getId());
+        assertThat(movie.getActors()[0], containsString("Chris Rock"));
+    }
+
+    @Test
+    public void testDoesMovieContainCurrectName() {
+        assertThat(m1, hasProperty("name", equalTo("Friday")));
+    }
 }

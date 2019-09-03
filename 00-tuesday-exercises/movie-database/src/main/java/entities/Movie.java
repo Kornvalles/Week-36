@@ -36,6 +36,10 @@ public class Movie implements Serializable {
     public Movie() {
     }
 
+    public Long getId() {
+        return id;
+    }
+    
     public int getYear() {
         return year;
     }
