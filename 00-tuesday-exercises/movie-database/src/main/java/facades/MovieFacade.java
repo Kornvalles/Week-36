@@ -68,7 +68,7 @@ public class MovieFacade implements IMovieFacade {
         EntityManager em = emf.createEntityManager();
         try {
             TypedQuery<Movie> query
-                    = em.createQuery("Select movie from Moive movie", Movie.class);
+                    = em.createQuery("Select movie from Movie movie", Movie.class);
             return query.getResultList();
         } finally {
             em.close();
