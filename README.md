@@ -7,7 +7,7 @@
 
 ## [Continuous integration with Travis-CI](https://dat3-2019fall.netlify.com/Flow-1/week3/02-09-2019/) <img src="https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1437657351/n1u0kd6v6mdbmdomuviq.png" alt="drawing" width="50"/> - d. 02-09
 
-1.  I deployed the project through travis.  [![Build Status](https://travis-ci.org/TheDanishWonder/Movie-Database.svg?branch=master)]       (https://travis-ci.org/TheDanishWonder/Movie-Database)
+1.  I deployed the project through travis. [![Build Status](https://travis-ci.org/TheDanishWonder/Movie-Database.svg?branch=master)](https://travis-ci.org/TheDanishWonder/Movie-Database)
 2.  [JPA, REST, Test, CI and Travis with our start code](https://github.com/TheDanishWonder/Movie-Database)
 3.  Kunne beskrive begrebet Continuous Integration og principper involveret(CI).
     Kunne beskrive et typisk CI Workflow.
