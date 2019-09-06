@@ -4,10 +4,14 @@
  * and open the template in the editor.
  */
 
+
+
 Array.from(document.getElementsByClassName("mydiv"))
-        .forEach(function (element){
-            element.addEventListener("click", function (){
-                "hi" + "from: "(this.id);
+        .forEach(function (div) {
+            div.addEventListener("click", function () {
+                saySomething(this.id);
             });
         });
-
+function saySomething(someID) {
+  document.getElementById("text").innerHTML = "Hi from: " + someID;
+}
