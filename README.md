@@ -5,7 +5,7 @@
 2. Where the solution to each exercise can be found in your commit
 3. Which of the weekly learnings goals were covered by your solution
 
-## [Continuous integration with Travis-CI](https://docs.google.com/document/d/1yN8fiKHI5oz4TfZrH_zHla51eiQ42F8tognZ4vefcVw/edit) <img src="https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1437657351/n1u0kd6v6mdbmdomuviq.png" alt="drawing" width="30"/> - d. 27-08
+## [Continuous integration with Travis-CI](https://docs.google.com/document/d/1yN8fiKHI5oz4TfZrH_zHla51eiQ42F8tognZ4vefcVw/edit) <img src="https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1437657351/n1u0kd6v6mdbmdomuviq.png" alt="drawing" width="50"/> - d. 27-08
 
 1. I finished all questions.
 2. [Fundamental Network Topics](https://github.com/TheDanishWonder/Week-35/tree/master/01-tuesday-exercises)
