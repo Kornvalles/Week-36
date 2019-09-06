@@ -7,9 +7,12 @@
 
 ## [Continuous integration with Travis-CI](https://docs.google.com/document/d/1yN8fiKHI5oz4TfZrH_zHla51eiQ42F8tognZ4vefcVw/edit) <img src="https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1437657351/n1u0kd6v6mdbmdomuviq.png" alt="drawing" width="50"/> - d. 27-08
 
-1. I finished all questions.
-2. [Fundamental Network Topics](https://github.com/TheDanishWonder/Week-35/tree/master/01-tuesday-exercises)
-3. Same as above.
+1. I deployed the project through travis. [![Build Status](https://travis-ci.org/TheDanishWonder/Movie-Database.svg?branch=master)](https://travis-ci.org/TheDanishWonder/Movie-Database)
+2. [Getting Started with Travis and CI](https://github.com/TheDanishWonder/Movie-Database)
+3.  Kunne beskrive begrebet Continuous Integration og principper involveret(CI).
+    Kunne beskrive et typisk CI Workflow.
+    Kunne demonstrere et CI/Continuos Delivery Workflow.
+    
 ## [The HTTP Protocol](https://docs.google.com/document/d/1yZnup_hF7s4WI0K6VWL2yc0XxPJ1_CkSt8GgZkjG3Mw/edit) - d. 28-08
 
 1. I started the first 2 exercises, but it made no sense. So i skipped this.
