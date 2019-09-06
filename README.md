@@ -45,5 +45,5 @@
 ## [Study Point Friday Exercises](https://dat3-2019fall.netlify.com/Flow-1/week3/SP3/) - d. 06-09
 
 1. almost finished part 1.
-2 [isItFriday?](http://isitfriday.org/)
+2. [isItFriday?](http://isitfriday.org/)
 3. GOD WEEKEND!
