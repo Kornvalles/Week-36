@@ -11,6 +11,10 @@
  *   [1,2,3,4].forEach(n=>console.log(n));
  */
 
+
+// **THE JAVASCRIPT ARRAY** //
+
+
 //  Exercise A
 var boys = ["Peter", "lars", "Ole"];
 var girls = ["Janne", "hanne", "Sanne"];
